@@ -1,5 +1,5 @@
 void splooshScreen()
 {
-background(255);
+backGround();
 spaceText();
 }

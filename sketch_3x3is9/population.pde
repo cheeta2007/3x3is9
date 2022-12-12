@@ -5,4 +5,8 @@ startWidth = centerX;
 startHeight = appHeight*1/10;
 startX = centerX - startWidth*1/2;
 startY = centerY - startHeight*1/2;
+backGroundX = appWidth * 0;
+backGroundY = appHeight * 0;
+backGroundWidth = appWidth;
+backGroundHeight = appHeight;
 }

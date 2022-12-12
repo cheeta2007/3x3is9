@@ -1,0 +1,4 @@
+void imagePop()
+{
+  backGroundImage = loadImage("")
+}
