@@ -1,4 +1,5 @@
+PImage backGroundImage;
 void imagePop()
 {
-  backGroundImage = loadImage("")
+  backGroundImage = loadImage("../images/sus.png");
 }

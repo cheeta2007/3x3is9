@@ -1,4 +1,4 @@
-int backGroundX, backGroundY, backGroundWidth, backGroundHeight;
+int backGroundX, backGroundY, backGroundWidth, backGroundHeight, dayMode=255, dayModeOP=50, tintRed=64, tintGrn=64, tintBlu=20, nightModeOP=85;
 void homeScreen()
 {
  println("home screen reached");
@@ -14,7 +14,7 @@ void backGround()
 void bImage()
 {
  backGround();
- tint();
- tint();
+ //tint(dayMode, dayModeOP);
+ tint(tintRed, tintGrn, tintBlu, nightModeOP);
  image(backGroundImage, backGroundX, backGroundY, backGroundWidth, backGroundHeight);
 }

@@ -3,28 +3,29 @@ boolean OS_on=false, splashScreen=false;
 color purple=#FF00FF, resetDefaultInk=#FFFFFF, white=#FFFFFF;
 void setup()
 {
-size(600, 400);
-appWidth=width;
-appHeight=height;
-display();
-population();
-textspace();
-println("smaller Dimension is", smallerDimension, "larger Dimension is", largerDimension);
+  size(600, 400);
+  appWidth=width;
+  appHeight=height;
+  display();
+  population();
+  textspace();
+  imagePop();
+  println("smaller Dimension is", smallerDimension, "larger Dimension is", largerDimension);
 }
 void draw()
 {
-if(OS_on==true) splooshScreen();
-if(splashScreen==false&&OS_on==true) homeScreen();
+  if (OS_on==true&&splashScreen==false) splooshScreen();
+  if (splashScreen==true&&OS_on==true) homeScreen();
 }
 void keyPressed()
 {
- if(key==' '&& splashScreen==false)
- {
-   splashScreen=true;
-   bImage();
- }
+  if (key==' '&& splashScreen==false)
+  {
+    splashScreen=true;
+    bImage();
+  }
 }
 void mousePressed()
 {
-if(OS_on==false) OS_on=true;
+  if (OS_on==false) OS_on=true;
 }
