@@ -1,5 +1,5 @@
 int appWidth, appHeight, smallerDimension, largerDimension;
-boolean OS_on=false, splashScreen=false;
+boolean OS_on=false, splashScreen=false, nightMode=true;
 color purple=#FF00FF, resetDefaultInk=#FFFFFF, white=#FFFFFF;
 void setup()
 {
@@ -20,10 +20,12 @@ void draw()
 void keyPressed()
 {
   if (key==' '&& splashScreen==false)
-  {
     splashScreen=true;
     bImage();
-  }
+    if(key==CODED&&keyCode==ESC) exit();
+    if(key=='q' || key=='Q') exit();
+    if(key=='N' || key=='n') if (nightMode==false)nightMode=true;
+    else nightMode=false;
 }
 void mousePressed()
 {
