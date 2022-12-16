@@ -21,11 +21,11 @@ void keyPressed()
 {
   if (key==' '&& splashScreen==false)
     splashScreen=true;
-    bImage();
-    if(key==CODED&&keyCode==ESC) exit();
-    if(key=='q' || key=='Q') exit();
-    if(key=='N' || key=='n') if (nightMode==false)nightMode=true;
-    else nightMode=false;
+  bImage();
+  if (key==CODED&&keyCode==ESC) exit();
+  if (key=='q' || key=='Q') exit();
+  if (key=='N' || key=='n') if (nightMode==false)nightMode=true;
+  else nightMode=false;
 }
 void mousePressed()
 {

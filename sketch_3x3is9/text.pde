@@ -17,7 +17,7 @@ void spaceText()
 }
 void quitText()
 {
-  rect(quitX, quitY, quitWidth, quitHeight);
+  //rect(quitX, quitY, quitWidth, quitHeight);
   fill(purple);
   textAlign(CENTER, CENTER);
   int size=33;
