@@ -17,10 +17,11 @@ void spaceText()
 }
 void quitText()
 {
-  //rect(quitX, quitY, quitWidth, quitHeight);
-  fill(purple);
+  rect(quitX, quitY, quitWidth, quitHeight);
+  color ink = (nightMode==true) ? #7D7D00 : #FF00FF;
+  fill(ink);
   textAlign(CENTER, CENTER);
-  int size=33;
+  int size=10;
   textFont(font, size);
   text(quitButton, quitX, quitY, quitWidth, quitHeight);
   noFill();

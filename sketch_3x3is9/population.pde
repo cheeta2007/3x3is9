@@ -12,9 +12,10 @@ void population()
   quitWidth = appWidth *1/3;
   quitHeight = appHeight *1/10;
   quitX = centerX - quitWidth *1/2;
-  quitY = centerY *4 - quitHeight;
+  quitY = centerY - quitHeight*4;
   quitButtonImageRectWidth = quitWidth;
   quitButtonImageRectHeight = quitHeight;
   quitButtonImageRectX = quitX; //problem?
   quitButtonImageRectY = quitY;
 }
+//bug somewhere in here stopping two buttons from working, find and fix

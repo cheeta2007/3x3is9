@@ -30,4 +30,5 @@ void keyPressed()
 void mousePressed()
 {
   if (OS_on==false) OS_on=true;
+  if(splashScreen==true&&mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight) exit();
 }
