@@ -1,6 +1,8 @@
-float centerX = appWidth*1/2, centerY = appHeight*1/2;
+float centerX, centerY;
 void population()
 {
+  centerX = appWidth*1/2;
+  centerY = appHeight*1/2;
   startWidth = centerX;
   startHeight = appHeight*1/10;
   startX = centerX - startWidth*1/2;
@@ -18,4 +20,23 @@ void population()
   quitButtonImageRectX = quitX; //problem?
   quitButtonImageRectY = quitY;
 }
-//bug somewhere in here stopping two buttons from working, find and fix
+/*
+ startWidth
+ startHeight
+ startX
+ startY
+ backGroundX
+ backGroundY
+ backGroundWidth
+ backGroundHeight
+ quitWidth
+ quitHeight
+ quitX
+ quitY
+ quitButtonImageRectWidth
+ quitButtonImageRectHeight
+ quitButtonImageRectX
+ quitButtonImageRectY
+ all variables for purpose of testing
+ //bug somewhere in here stopping two buttons from working, find and fix
+ */

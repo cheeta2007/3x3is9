@@ -11,6 +11,7 @@ void setup()
   textspace();
   imagePop();
   println("smaller Dimension is", smallerDimension, "larger Dimension is", largerDimension);
+  //"For Bug Fix"println("H", appHeight, "W", appWidth, "CY", centerY, "CX", centerX, "SW", startWidth, "SH", startHeight, "SX", startX, "SY", startY, "BX", backGroundX, "BY", backGroundY, "BW", backGroundWidth, "BH", backGroundHeight, "QW", quitWidth, "QH", quitHeight, "QX", quitX, "QY", quitY, "QRW", quitButtonImageRectWidth, "QRH", quitButtonImageRectHeight, "QRX", quitButtonImageRectX, "QRY", quitButtonImageRectY);
 }
 void draw()
 {
